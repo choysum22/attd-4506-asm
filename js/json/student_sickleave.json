@@ -1,0 +1,66 @@
+[
+  {
+    "_id": 1,
+    "date": "17-5-2021",
+    "month": "May",
+    "_class": "4A",
+    "name": "Roxanne Frank",
+    "reason": "Fever"
+  },
+  {
+    "_id": 2,
+    "date": "5-9-2021",
+    "month": "September",
+    "_class": "4A",
+    "name": "Betsy Sparks",
+    "reason": "Cold"
+  },
+  {
+    "_id": 3,
+    "date": "11-10-2021",
+    "month": "October",
+    "_class": "4A",
+    "name": "Arline Potts",
+    "reason": "Diarrhea"
+  },
+  {
+    "_id": 4,
+    "date": "17-10-2021",
+    "month": "October",
+    "_class": "4A",
+    "name": "Mcbride Fischer",
+    "reason": "Cold"
+  },
+  {
+    "_id": 5,
+    "date": "20-1-2022",
+    "month": "January",
+    "_class": "4A",
+    "name": "Aisha Hicks",
+    "reason": "Cold"
+  },
+  {
+    "_id": 6,
+    "date": "6-2-2022",
+    "month": "February",
+    "_class": "4A",
+    "name": "Elisa Pratt",
+    "reason": "Diarrhea"
+  },
+  {
+    "_id": 7,
+    "date": "15-2-2022",
+    "month": "February",
+    "_class": "4A",
+    "name": "Cervantes Sweeney",
+    "reason": "Fever"
+  },
+  {
+    "_id": 8,
+    "date": "18-3-2022",
+    "month": "March",
+    "_class": "4A",
+    "name": "Vaughn Dixon",
+    "reason": "Stomach ache"
+  }
+]

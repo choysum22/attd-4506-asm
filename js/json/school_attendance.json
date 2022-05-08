@@ -1,0 +1,46 @@
+[
+  {
+    "_id": 1,
+    "year": "2018-2019",
+    "attendance_rate": 82,
+    "late": 350,
+    "earlyleave": 45,
+    "sickleave": 200,
+    "personalleave": 57,
+    "absent": 60,
+    "total_student": 720
+  },
+  {
+    "_id": 2,
+    "year": "2019-2020",
+    "attendance_rate": 80,
+    "late": 134,
+    "earlyleave": 32,
+    "sickleave": 122,
+    "personalleave": 32,
+    "absent": 32,
+    "total_student": 742
+  },
+  {
+    "_id": 3,
+    "year": "2020-2021",
+    "attendance_rate": 84,
+    "late": 224,
+    "earlyleave": 33,
+    "sickleave": 177,
+    "personalleave": 22,
+    "absent": 32,
+    "total_student": 734
+  },
+  {
+    "_id": 4,
+    "year": "2021-2022",
+    "attendance_rate": 91,
+    "late": 290,
+    "earlyleave": 32,
+    "sickleave": 160,
+    "personalleave": 32,
+    "absent": 30,
+    "total_student": 714
+  }
+]

@@ -1,0 +1,48 @@
+user list
+[
+  '{{repeat(100)}}',
+  {
+    _id: '{{index(1)}}',
+    name: '{{firstName()}} {{surname()}}',
+    gender: '{{random("Male(M)", "Female(F)")}}',
+    password: '{{random("a","d","z","c","kd")}}{{lorem([1],"words")}}',
+    email: '{{email([random])}}',
+    phone: '{{phone("xxxxxxxx")}}',
+    type: '{{random("Teacher", "Student")}}',
+    status: 'Enabled',
+    Class: '{{random("4A", "6B")}}'
+  }
+  
+]
+
+class list
+[
+  '{{repeat(100)}}',
+  {
+    _id: '{{index(1)}}',
+    _class: '{{random("1","2","3","4","5","6")}}{{random("A","B","C","D")}}',
+    students: '{{random("28","29","30","31","32")}}',
+    year: '{{random("2020-2021", "2021-2022","2019-2020")}}',
+    teacher: '{{firstName()}} {{surname()}}',
+    status: 'Active'
+  }
+  
+]
+
+student attendance
+[
+  '{{repeat(420)}}',
+  {
+    _id: '{{index(1)}}',
+    _class: '{{random("1","2","3","4","5","6")}}{{random("A","B","C","D")}}',
+    name: '{{firstName()}} {{surname()}}',
+    attendance_rate: '{{integer(85, 100)}}%',
+    late: '{{integer(0, 10)}}',
+    earlyleave: '{{integer(0, 2)}}',
+    sickleave: '{{integer(0, 4)}}',
+    personalleave: '{{integer(0, 1)}}',
+    absent: '{{integer(0, 3)}}'
+  }
+]
+
+class attendance

@@ -1,0 +1,18 @@
+student
+username: s01234
+password: password
+
+teacher
+username: kfc420
+password: ihatethisschool
+
+admin
+username: root
+password: xJDSx*5gpN^f&YH
+
+new student
+username: s23456
+password: s23456
+email: student@gmail.com
+new password: asdfgh
+confirm password: asdfgh

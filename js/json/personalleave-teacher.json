@@ -1,0 +1,98 @@
+[
+  {
+    "_id": 1,
+    "start_date": "17-5-2021",
+    "end_date": "17-5-2021",
+    "month": "May",
+    "_class": "4A",
+    "name": "Roxanne Potts",
+    "teacher": "Roxanne White",
+    "time": "14-5-2021",
+    "phone": 84550927,
+    "reason": "Violin Competition"
+  },
+  {
+    "_id": 2,
+    "start_date": "5-9-2021",
+    "end_date": "5-9-2021",
+    "month": "September",
+    "_class": "4A",
+    "name": "Betsy Sparks",
+    "teacher": "Roxanne White",
+    "time": "1-9-2021",
+    "phone": 99055736,
+    "reason": "Attend Follow Up with doctor"
+  },
+  {
+    "_id": 3,
+    "start_date": "11-10-2021",
+    "end_date": "11-10-2021",
+    "month": "October",
+    "_class": "4A",
+    "name": "Arline Frank",
+    "teacher": "Roxanne White",
+    "time": "7-10-2021",
+    "phone": 96044537,
+    "reason": "Football Match"
+  },
+  {
+    "_id": 4,
+    "start_date": "17-10-2021",
+    "end_date": "17-10-2021",
+    "month": "October",
+    "_class": "4A",
+    "name": "Aisha Fischer",
+    "teacher": "Roxanne White",
+    "time": "10-10-2021",
+    "phone": 84350538,
+    "reason": "Attend Follow Up with doctor"
+  },
+  {
+    "_id": 5,
+    "start_date": "20-1-2022",
+    "end_date": "20-1-2022",
+    "month": "January",
+    "_class": "4A",
+    "name": "Mcbride Hicks",
+    "teacher": "Roxanne White",
+    "time": "13-1-2022",
+    "phone": 98750328,
+    "reason": "Attend Follow Up with doctor"
+  },
+  {
+    "_id": 6,
+    "start_date": "6-2-2022",
+    "end_date": "6-2-2022",
+    "month": "February",
+    "_class": "4A",
+    "name": "Elisa Pratt",
+    "teacher": "Roxanne White",
+    "time": "2-2-2022",
+    "phone": 97645636,
+    "reason": "Football Match"
+  },
+  {
+    "_id": 7,
+    "start_date": "15-2-2022",
+    "end_date": "15-2-2022",
+    "month": "February",
+    "_class": "4A",
+    "name": "Cervantes Sweeney",
+    "teacher": "Roxanne White",
+    "time": "14-2-2022",
+    "phone": 96349121,
+    "reason": "Piano Competition"
+  },
+  {
+    "_id": 8,
+    "start_date": "18-3-2022",
+    "end_date": "18-3-2022",
+    "month": "March",
+    "_class": "4A",
+    "name": "Vaughn Dixon",
+    "teacher": "Roxanne White",
+    "time": "15-3-2022",
+    "phone": 86656521,
+    "reason": "Football Match"
+  }
+]

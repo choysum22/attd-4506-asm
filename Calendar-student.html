@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/10b46cce35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/fullcalendar/main.css" />
+    <script type="text/javascript" src="jslib/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialDate: "2021-12-12",
+          initialView: "dayGridMonth",
+          headerToolbar: {
+            left: "prev,next",
+            center: "title",
+            right: "today dayGridMonth,dayGridWeek",
+          },
+          themeSystem: "bootstrap",
+          height: "700px",
+          displayEventTime: false, // don't show the time column in list view
+
+          googleCalendarApiKey: "AIzaSyCIShnNtjI11h2hqoz5QxzxYC4EtJgrjhU",
+          eventSources: [
+            {
+              //googleCalendarId: "en.hong_kong#holiday@group.v.calendar.google.com",
+              googleCalendarId: "dc.edu.hk_pk23n9ds25j3reljc7su6jnvhg@group.calendar.google.com",
+            },
+          ],
+
+          eventClick: function (arg) {
+            // opens events in a popup window
+            window.open(arg.event.url, "_blank", "width=700,height=600");
+
+            // prevents current tab from navigating
+            arg.jsEvent.preventDefault();
+          },
+        });
+        calendar.render();
+      });
+    </script>
+    <title>Calendar</title>
+  </head>
+
+  <body>
+    <div class="container-fluid mt-3">
+      <div class="row d-flex" id="navbar">
+        <div class="col-2" id="navbar-icon-col">
+          <h5 class="mb-3 user-select-none" id="navbar-icon">Attendance Online</h5>
+        </div>
+        <div class="col-9 flex-fill" id="navbar-search">
+          <div class="input-group">
+            <div class="input-group mb-3">
+              <input type="search" class="form-control rounded" id="nav-search-input" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+              <button class="btn btn-default" id="navbar-search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto flex-fill user-select-none" -container">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="navbar-left">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link nav-left" href="Main-student.html" aria-current="page">
+              <i class="bi bi-calendar-check"></i>
+              Attendance
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-left" href="Upload-student.html">
+              <i class="bi bi-upload"></i>
+              Upload Sick Leave Certificates
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-left" href="Personalleave-student.html">
+              <i class="bi bi-clock-history"></i>
+              Apply for Personal Leave
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-left" href="Calendar-student.html">
+              <i class="bi bi-calendar3 selected"></i>
+              Calendar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-left" href="Class-student.html">
+              <i class="bi bi-people-fill"></i>
+              Class
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-left" href="Account-student.html">
+              <i class="bi bi-person-circle"></i>
+              Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-left" href="index.html" id="logout-btn">
+              <i class="bi bi-box-arrow-left"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-10">
+        <div class="row user-select-none" id="content-tab-title">School Calendar</div>
+        <div class="row"></div>
+        <div class="container-md user-select-none overflow-auto teacher" id="calendar-container">
+          <div id="calendar"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/calendar-student.js"></script>
+    <script type="text/javascript" src="node_modules/fullcalendar/main.js"></script>
+  </body>
+</html>
